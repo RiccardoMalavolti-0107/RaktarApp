@@ -33,7 +33,7 @@ namespace RaktarApp
         public Termek(string becikszam, int bealapar)
         {
             Cikkszam = becikszam;
-            alapar = bealapar;
+            Alapar = bealapar;
             osszesTermekSzama++;
         }
 
