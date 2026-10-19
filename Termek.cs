@@ -6,7 +6,7 @@ namespace RaktarApp
 {
     public class Termek
     {
-        public string Cikszam { get; set; }
+        public string Cikkszam { get; set; }
         protected int alapar;
 
         public int Alapar { get { return alapar; }
@@ -32,7 +32,7 @@ namespace RaktarApp
 
         public Termek(string becikszam, int bealapar)
         {
-            Cikszam = becikszam;
+            Cikkszam = becikszam;
             alapar = bealapar;
             osszesTermekSzama++;
         }
@@ -40,6 +40,10 @@ namespace RaktarApp
         public virtual int ErtekSzamitas(int darabszam)
         {
             return Alapar * darabszam;
+        }
+        public override string ToString()
+        {
+            return $"Termék {Cikkszam} | Egységár: {Alapar} Ft";
         }
     }
 }
